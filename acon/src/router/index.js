@@ -83,6 +83,25 @@ export const constantRoutes = [
       meta: { title: '组织机构管理', icon: '' }
     }]
   },
+  {
+    path: '/blg',
+    component: Layout,
+    redirect: '/blg/index',
+    meta: { title: '统计分析', icon: 'qc' },
+    children: [{
+      path: 'index',
+      name: 'Blg',
+      component: () => import('@/views/blg/index'),
+      meta: { title: '统计分析', icon: '' }
+    },
+    {
+      path: 'operatorblg',
+      name: 'Operatorblg',
+      component: () => import('@/views/blg/operatorblg'),
+      meta: { title: '操作人检测统计分析', icon: '' },
+      hidden: true
+    }]
+  },
   { path: '*', redirect: '/404', hidden: true }
 ]
 

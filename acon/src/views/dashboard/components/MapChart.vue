@@ -84,7 +84,7 @@ export default {
           show: true
         },
         geo: {
-          map: 'tongweixian',
+          map: 'hangzhou',
           roam: false,
           zoom: 1.23,
           label: {

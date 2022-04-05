@@ -73,8 +73,8 @@ import { getTotalCount, getDayTrend, getTotalAreaSummary, getDayAreaSummary } fr
 import moment from 'moment'
 import { mapGetters } from 'vuex'
 // import china from '@/views/dashboard/json/china.json'
-// import hangzhou from '@/views/dashboard/json/province/hangzhou.json'
-import tongweixian from '@/views/dashboard/json/province/tongweixian.json'
+import hangzhou from '@/views/dashboard/json/province/hangzhou.json'
+// import tongweixian from '@/views/dashboard/json/province/tongweixian.json'
 
 import { Message } from 'element-ui'
 // import '../../node_modules/echarts/map/js/china.js' // 引入中国地图数据
@@ -225,7 +225,7 @@ export default {
     //   return Math.round(Math.random() * 50)
     // },
     loadDat () {
-      this.$echarts.registerMap('tongweixian', tongweixian)
+      this.$echarts.registerMap('hangzhou', hangzhou)
     }
 
   }

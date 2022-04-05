@@ -182,6 +182,28 @@ export function deledateOperator (dataId) {
     }
   })
 }
+// 统计分析
+export function getOrganizationSummary (data) {
+  return request({
+    url: 'collect-app-service/statistics/organizationSummary',
+    method: 'get',
+    params: {
+      day: data.day,
+      page: data.page,
+      size: data.size
+    }
+  })
+}
+export function getOperatorSummary (data) {
+  return request({
+    url: 'collect-app-service/statistics/operatorSummary',
+    method: 'get',
+    params: {
+      day: data.day,
+      organizationId: data.organizationId
+    }
+  })
+}
 
 // -------------------------------组织机构管理---------------------------------
 
