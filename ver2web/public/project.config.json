@@ -1,0 +1,6 @@
+{
+  "serviceUrl": "http://1.13.8.130:8086/",
+  "baseUrl": "https://192.168.1.11/data/",
+  "reportServiceUrl": "http://c.aconcloud.cn:8030",
+  "timeout": 30000
+}
