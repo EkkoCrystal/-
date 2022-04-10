@@ -1,0 +1,8 @@
+{
+  "serviceUrl": "http://c.aconcloud.cn:8086",
+  "baseUrl": "https://192.168.1.11/data/",
+  "reportServiceUrl": "http://c.aconcloud.cn:8030",
+  "tenant": "102",
+  "timeout": 30000,
+  "isShowTenant": false
+}
